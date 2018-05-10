@@ -17,10 +17,13 @@ import gqlOverRest from './assets/gql-over-rest.png';
 import schemaDev from './assets/schema-dev.png';
 import dataFlow from './assets/data-flow.png';
 import whatIs from './assets/what-is-apollo.png';
+import reactEU from './assets/reacteurope.png';
+import formidableLogo from './assets/Formidable_White.svg';
 
 export default {
   apolloBkgr,
   apolloLogo,
+  formidableLogo,
   khaled,
   peggy,
   schema,
@@ -38,4 +41,5 @@ export default {
   whatIs,
   stores,
   gqlInterface,
+  reactEU
 };
