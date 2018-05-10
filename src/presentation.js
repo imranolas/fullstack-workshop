@@ -51,41 +51,63 @@ export default class Presentation extends React.Component {
         theme={theme}
       >
         <Slide bgImage={images.apolloBkgr}>
-          <Image src={images.apolloLogo} margin="0 0 0 -55px" width="800px" />
-          <Text bold textColor="tertiary">
-            Fullstack GraphQL Workshop
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+              width: '100%',
+              flexDirection: 'column',
+            }}
+          >
+            <Image src={images.apolloLogo} height="150px" />
+            <Text textColor="primary" textSize={size.small}>
+              and
           </Text>
+            <Image src={images.formidableLogo} height="110px" />
+            <Text
+              bold
+              textColor="tertiary"
+              style={{
+                letterSpacing: '3px',
+              }}
+            >
+              Fullstack GraphQL
+            </Text>
+          </div>
         </Slide>
         <Slide bgImage={images.apolloBkgr}>
           <div
             style={{
               display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              justifyContent: 'center',
+              width: '100%',
             }}
           >
-            <Image
-              src={images.peggy}
-              width="300px"
-              height="300px"
-              style={{ borderRadius: '50%' }}
-            />
             <Layout.Column>
+              <Image src={images.apolloLogo} height="110px" />
               <Text margin="20px 0px 0px 30px" bold textColor="tertiary">
                 @peggyrayzis
               </Text>
-              <Text margin="20px 0px 0px 30px" textColor="primary">
-                Open Source Engineer
+              <Text margin="20px 0px 0px 30px" bold textColor="tertiary">
+                @JakeDawkins
+              </Text>
+            </Layout.Column>
+            <Layout.Column>
+              <Image src={images.formidableLogo} height="110px" />
+              <Text margin="20px 0px 0px 30px" bold textColor="tertiary">
+                @imranolas
               </Text>
             </Layout.Column>
           </div>
         </Slide>
         <Slide>
-          <Heading>Peggy's 🔑s to success!</Heading>
+          <Heading>🔑s to success!</Heading>
           <List>
             {[
-              'Write down any questions ✏️',
-              'Help me by helping each other 👭',
+              'Ask questions 🙋',
+              'Help each other 👭',
               `Don't worry about taking notes 📓`,
             ].map(item => (
               <Appear key={item}>
@@ -102,15 +124,13 @@ export default class Presentation extends React.Component {
         <Slide>
           <Heading>What's with the Post-its?! 🚦</Heading>
           <List>
-            {[
-              `✅ I'm doing great!`,
-              `🤔 Hmm, can you repeat that?`,
-              `🛑 Help!! I'm totally lost.`,
-            ].map(item => (
+            {[`✅ I'm doing great!`, `🛑 Help!! I'm totally lost.`].map(
+              item => (
               <Text key={item} style={{ lineHeight: 1.5 }}>
                 {item}
               </Text>
-            ))}
+              )
+            )}
           </List>
         </Slide>
         <Slide bgImage={images.apolloBkgr}>
