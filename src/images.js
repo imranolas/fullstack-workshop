@@ -19,6 +19,7 @@ import dataFlow from './assets/data-flow.png';
 import whatIs from './assets/what-is-apollo.png';
 import reactEU from './assets/reacteurope.png';
 import formidableLogo from './assets/Formidable_White.svg';
+import graph from './assets/graph.svg';
 
 export default {
   apolloBkgr,
@@ -41,5 +42,6 @@ export default {
   whatIs,
   stores,
   gqlInterface,
-  reactEU
+  reactEU,
+  graph,
 };

@@ -257,6 +257,20 @@ export default class Presentation extends React.Component {
           </Layout.Row>
         </Slide>
         <Slide>
+          <Heading>What is a graph?</Heading>
+          <Text margin="20px 0" textSize={size.small}>
+            A graph is an abstract representation of nodes and their
+            relationships to other nodes.
+          </Text>
+        </Slide>
+        <Slide>
+          <Image
+            src={images.graph}
+            style={{ alignSelf: 'center' }}
+            height="600px"
+          />
+        </Slide>
+        <Slide>
           <Heading>REST vs. GraphQL</Heading>
           <Text margin="30px 0" textSize={size.extraSmall}>
             With GraphQL, you can accomplish the same features as REST with less
